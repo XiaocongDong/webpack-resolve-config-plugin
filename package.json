@@ -6,12 +6,19 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "keywords": [
+    "webpack",
+    "plugin",
+    "dependency",
+    "configuration",
+    "resolve"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/XiaocongDong/webpack-resolve-config-plugin.git"
   },
-  "author": "XiaocongDong (buptdxc@gmail.com)",
-  "license": "ISC",
+  "author": "Xiaocong Dong<buptdxc@gmail.com>",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/XiaocongDong/webpack-resolve-config-plugin/issues"
   },
