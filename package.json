@@ -1,0 +1,26 @@
+{
+  "name": "webpack-resolve-config-plugin",
+  "version": "1.0.0",
+  "description": "Take dependency's webpack resolve configuration into consideration when bundling it with Webpack.",
+  "main": "./src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/XiaocongDong/webpack-resolve-config-plugin.git"
+  },
+  "author": "XiaocongDong (buptdxc@gmail.com)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/XiaocongDong/webpack-resolve-config-plugin/issues"
+  },
+  "homepage": "https://github.com/XiaocongDong/webpack-resolve-config-plugin#readme",
+  "dependencies": {
+    "find-parent-dir": "^0.3.0",
+    "schema-utils": "^1.0.0"
+  },
+  "peerDependencies": {
+    "webpack": "^4.0.0"    
+  }
+}

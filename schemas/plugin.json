@@ -1,0 +1,51 @@
+{
+  "definitions": {
+    "optionsObject": {
+      "type": "object",
+      "properties": {
+        "match": {
+          "instanceof": "RegExp"
+        },
+        "file": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": false
+    },
+    "optionsArray": {
+      "type": "array",
+      "items": [
+        {
+          "$ref": "#/definitions/optionsObject"
+        }
+      ]
+    },
+    "regexArray": {
+      "type": "array",
+      "items": [
+        {
+          "instanceof": "RegExp"
+        }
+      ]
+    }
+  },
+  "type": "object",
+  "properties": {
+    "include": {
+      "anyOf": [
+        { "$ref": "#/definitions/optionsObject" },
+        { "$ref": "#/definitions/optionsArray" },
+        { "$ref": "#/definitions/regexArray" },
+        { "instanceof": "RegExp" }
+      ]
+    },
+    "exclude": {
+      "anyOf": [
+        { "$ref": "#/definitions/regexArray" },
+        { "instanceof": "RegExp" }        
+      ]
+    }
+  },
+  "required": ["include"],
+  "additionalProperties": false
+}
